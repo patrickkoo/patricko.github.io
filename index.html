@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body style="background-image: url('assets/img/qatar.jpg'); background-size: cover; background-position: center;">
+    <div class="container">
+        <h2>Subscribe</h2>
+        <form onsubmit="emailSend(); reset(); return false;">
+            <div class="input-box">
+                <input type="text" id="name" placeholder="name" name="name" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="text" id="password" placeholder="password" name="password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="input-box">
+                <input type="email" id="email" placeholder="email" name="email" required>
+            </div>
+            
+            <button type="submit" class="Button">submit</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
